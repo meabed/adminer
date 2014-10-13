@@ -21,6 +21,7 @@ function adminer_object() {
 		new AdminerDumpAlter,
 		new AdminerTablesFilter,
 		new AdminerSqlLog,
+	    new AdminerTheme,
 		//new AdminerTablesFilter,
     );
     
