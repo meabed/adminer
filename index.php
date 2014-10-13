@@ -22,6 +22,7 @@ function adminer_object() {
 		new AdminerTablesFilter,
 		new AdminerSqlLog,
 	    new AdminerTheme,
+	    new AdminerLimit,
 		//new AdminerTablesFilter,
     );
     
