@@ -10,6 +10,11 @@ function adminer_object() {
     
     $plugins = array(
         // specify enabled plugins here
+        new AdminerDatabaseHide(array("mysql", "information_schema", "performance_schema")),
+        new AdminerLoginServers(array(filter_input(INPUT_SERVER, 'SERVER_NAME'))),
+        new AdminerSimpleMenu(),
+        new AdminerCollations(array("utf8_general_ci", "utf8mb4_general_ci")),
+        new AdminerJsonPreview(),
         new AdminerLinksDirect,
         new AdminerDumpXml,
         new AdminerDumpZip,
